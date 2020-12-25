@@ -84,7 +84,7 @@ def main():
                            output=output,
                            output_path="mp4-h264-aac",
                            streams=[video_stream, aac_audio_stream],
-                           file_name="video.mp4")
+                           file_name="video-{0}x{1}.mp4".format(video_configuration.height, video_configuration.bitrate))
 
     _execute_encoding(encoding=encoding)
 
